@@ -1,0 +1,52 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1754810250869,75,Scenario-1 Search,200,"Number of samples in transaction : 2, number of failing samples : 0",Scenario-1 Search 1-1,,true,,9469,1910,1,4,null,0,118,26
+1754810250983,54,1 Open URL,200,,Scenario-1 Search 1-1,text,true,,5531,743,1,4,http://localhost:8090/jpetstore/actions/Catalog.action,54,0,26
+1754810251041,21,1 Search Product,200,,Scenario-1 Search 1-1,text,true,,3938,1167,1,4,http://localhost:8090/jpetstore/actions/Catalog.action,21,0,0
+1754810250812,107,Scenario-2 View Details,200,"Number of samples in transaction : 4, number of failing samples : 0",Scenario-2 View Details 2-1,,true,,17233,3345,1,3,null,0,7099,26
+1754810250983,54,2-1-Open URL,200,,Scenario-2 View Details 2-1,text,true,,5531,743,1,4,http://localhost:8090/jpetstore/actions/Catalog.action,54,0,26
+1754810251048,15,2-2- click on categoryId,200,,Scenario-2 View Details 2-1,text,true,,4089,848,1,4,http://localhost:8090/jpetstore/actions/Catalog.action?viewCategory=&categoryId=DOGS,15,0,0
+1754810257928,20,2-3-click on productId,200,,Scenario-2 View Details 2-1,text,true,,3983,880,1,3,http://localhost:8090/jpetstore/actions/Catalog.action?viewProduct=&productId=K9-CW-01,19,0,0
+1754810257999,18,2-4-click on itemId,200,,Scenario-2 View Details 2-1,text,true,,3630,874,1,3,http://localhost:8090/jpetstore/actions/Catalog.action?viewItem=&itemId=EST-27,18,0,0
+1754810250869,108,Scenario-3 Add to Cart,200,"Number of samples in transaction : 7, number of failing samples : 0",Scneario-3 Add to Cart 3-1,,true,,33499,8036,1,2,null,0,23115,2
+1754810250869,8,3-1-Open URL,200,"Number of samples in transaction : 1, number of failing samples : 0",Scneario-3 Add to Cart 3-1,,true,,5531,743,1,3,null,0,3091,2
+1754810253959,8,3-1-Open URL,200,,Scneario-3 Add to Cart 3-1,text,true,,5531,743,1,3,http://localhost:8090/jpetstore/actions/Catalog.action,8,0,2
+1754810253968,14,3-2-Click on sign in,200,"Number of samples in transaction : 1, number of failing samples : 0",Scneario-3 Add to Cart 3-1,,true,,3924,830,1,3,null,0,1,0
+1754810253969,14,3-2-Click on sign in,200,,Scneario-3 Add to Cart 3-1,text,true,,3924,830,1,3,http://localhost:8090/jpetstore/actions/Account.action?signonForm=,14,0,0
+1754810253983,23,3-3-Enter Usernname and password,200,"Number of samples in transaction : 1, number of failing samples : 0",Scneario-3 Add to Cart 3-1,,true,,5202,2149,1,3,null,0,3018,0
+1754810256999,23,3-3-Enter Usernname and password,200,,Scneario-3 Add to Cart 3-1,text,true,,5202,2149,1,3,http://localhost:8090/jpetstore/actions/Catalog.action,6,0,0
+1754810256999,6,3-3-Enter Usernname and password-0,302,,Scneario-3 Add to Cart 3-1,,true,,191,1205,1,3,http://localhost:8090/jpetstore/actions/Account.action,6,0,0
+1754810257006,16,3-3-Enter Usernname and password-1,200,,Scneario-3 Add to Cart 3-1,text,true,,5011,944,1,3,http://localhost:8090/jpetstore/actions/Catalog.action,16,0,0
+1754810257023,14,3-4-Click on category,200,"Number of samples in transaction : 1, number of failing samples : 0",Scneario-3 Add to Cart 3-1,,true,,4236,848,1,2,null,0,3006,0
+1754810260029,14,3-4-Click on category,200,,Scneario-3 Add to Cart 3-1,text,true,,4236,848,1,2,http://localhost:8090/jpetstore/actions/Catalog.action?viewCategory=&categoryId=DOGS,13,0,0
+1754810260043,12,3-5-Click on product id,200,"Number of samples in transaction : 1, number of failing samples : 0",Scneario-3 Add to Cart 3-1,,true,,4811,880,1,2,null,0,5837,0
+1754810265880,12,Click on product id,200,,Scneario-3 Add to Cart 3-1,text,true,,4811,880,1,2,http://localhost:8090/jpetstore/actions/Catalog.action?viewProduct=&productId=K9-RT-02,12,0,0
+1754810265893,20,3-6-Click on add to cart,200,"Number of samples in transaction : 1, number of failing samples : 0",Scneario-3 Add to Cart 3-1,,true,,4689,875,1,2,null,0,5096,0
+1754810270989,20,Click on add to cart,200,,Scneario-3 Add to Cart 3-1,text,true,,4689,875,1,2,http://localhost:8090/jpetstore/actions/Cart.action?addItemToCart=&workingItemId=EST-23,20,0,0
+1754810271009,17,3-7-Click on signout,200,"Number of samples in transaction : 1, number of failing samples : 0",Scneario-3 Add to Cart 3-1,,true,,5106,1711,1,2,null,0,3066,0
+1754810274075,17,Click on sign out,200,,Scneario-3 Add to Cart 3-1,text,true,,5106,1711,1,2,http://localhost:8090/jpetstore/actions/Catalog.action,4,0,0
+1754810274075,4,Click on sign out-0,302,,Scneario-3 Add to Cart 3-1,,true,,191,860,1,2,http://localhost:8090/jpetstore/actions/Account.action?signoff=,4,0,0
+1754810274079,13,Click on sign out-1,200,,Scneario-3 Add to Cart 3-1,text,true,,4915,851,1,2,http://localhost:8090/jpetstore/actions/Catalog.action,13,0,0
+1754810250870,145,Scenario-4 Check out,200,"Number of samples in transaction : 10, number of failing samples : 0",Scenario-4 Check out 4-1,,true,,47941,11218,1,1,null,0,27458,1
+1754810253950,6,4-1-Open URL,200,,Scenario-4 Check out 4-1,text,true,,5531,743,1,3,http://localhost:8090/jpetstore/actions/Catalog.action,6,0,1
+1754810253957,5,4-2-Click on sign in,200,"Number of samples in transaction : 1, number of failing samples : 0",Scenario-4 Check out 4-1,,true,,3924,830,1,3,null,0,3096,0
+1754810257052,5,4-2-Click on sign in,200,,Scenario-4 Check out 4-1,text,true,,3924,830,1,3,http://localhost:8090/jpetstore/actions/Account.action?signonForm=,5,0,0
+1754810257057,13,"4-3-Enter usename,passwork & click on login ",200,"Number of samples in transaction : 1, number of failing samples : 0",Scenario-4 Check out 4-1,,true,,5202,2149,1,2,null,0,3061,0
+1754810260118,13,"4-3-Enter usename,passwork & click on login ",200,,Scenario-4 Check out 4-1,text,true,,5202,2149,1,2,http://localhost:8090/jpetstore/actions/Catalog.action,6,0,0
+1754810260118,6,"4-3-Enter usename,passwork & click on login -0",302,,Scenario-4 Check out 4-1,,true,,191,1205,1,2,http://localhost:8090/jpetstore/actions/Account.action,6,0,0
+1754810260124,7,"4-3-Enter usename,passwork & click on login -1",200,,Scenario-4 Check out 4-1,text,true,,5011,944,1,2,http://localhost:8090/jpetstore/actions/Catalog.action,7,0,0
+1754810260131,7,4-4-Click on cateogory,200,"Number of samples in transaction : 1, number of failing samples : 0",Scenario-4 Check out 4-1,,true,,4236,848,1,2,null,0,2,0
+1754810260132,7,4-4-Click on cateogory,200,,Scenario-4 Check out 4-1,text,true,,4236,848,1,2,http://localhost:8090/jpetstore/actions/Catalog.action?viewCategory=&categoryId=DOGS,7,0,0
+1754810260140,21,4-5-Click on product id,200,"Number of samples in transaction : 1, number of failing samples : 0",Scenario-4 Check out 4-1,,true,,4142,880,1,2,null,0,3015,0
+1754810263155,21,4-5-Click on product id,200,,Scenario-4 Check out 4-1,text,true,,4142,880,1,2,http://localhost:8090/jpetstore/actions/Catalog.action?viewProduct=&productId=K9-DL-01,21,0,0
+1754810263177,20,4-6-Click on add to cart,200,"Number of samples in transaction : 1, number of failing samples : 0",Scenario-4 Check out 4-1,,true,,4685,883,1,2,null,0,3075,0
+1754810266251,20,4-6-Click on add to cart,200,,Scenario-4 Check out 4-1,text,true,,4685,883,1,2,http://localhost:8090/jpetstore/actions/Cart.action?addItemToCart=&workingItemId=EST-10,20,0,0
+1754810266272,17,4-7-Click on proceed to check out,200,"Number of samples in transaction : 1, number of failing samples : 0",Scenario-4 Check out 4-1,,true,,5388,862,1,2,null,0,3057,0
+1754810269329,17,4-7-Click on proceed to check out,200,,Scenario-4 Check out 4-1,text,true,,5388,862,1,2,http://localhost:8090/jpetstore/actions/Order.action?newOrderForm=,16,0,0
+1754810269346,15,4-8-Key in payment deatils and click continue,200,"Number of samples in transaction : 1, number of failing samples : 0",Scenario-4 Check out 4-1,,true,,4508,1493,1,2,null,0,3024,0
+1754810272369,15,4-8-Key in payment deatils and click continue,200,,Scenario-4 Check out 4-1,text,true,,4508,1493,1,2,http://localhost:8090/jpetstore/actions/Order.action,15,0,0
+1754810272385,26,4-9-Click on confirm,200,"Number of samples in transaction : 1, number of failing samples : 0",Scenario-4 Check out 4-1,,true,,5219,839,1,1,null,0,3020,0
+1754810275405,26,4-9-Click on confirm,200,,Scenario-4 Check out 4-1,text,true,,5219,839,1,1,http://localhost:8090/jpetstore/actions/Order.action?newOrder=&confirmed=true,25,0,0
+1754810275431,15,4-10-Click on sign out,200,"Number of samples in transaction : 1, number of failing samples : 0",Scenario-4 Check out 4-1,,true,,5106,1691,1,1,null,0,3027,0
+1754810278457,15,4-10-Click on sign out,200,,Scenario-4 Check out 4-1,text,true,,5106,1691,1,1,http://localhost:8090/jpetstore/actions/Catalog.action,3,0,0
+1754810278457,3,4-10-Click on sign out-0,302,,Scenario-4 Check out 4-1,,true,,191,850,1,1,http://localhost:8090/jpetstore/actions/Account.action?signoff=,3,0,0
+1754810278461,11,4-10-Click on sign out-1,200,,Scenario-4 Check out 4-1,text,true,,4915,841,1,1,http://localhost:8090/jpetstore/actions/Catalog.action,11,0,0
