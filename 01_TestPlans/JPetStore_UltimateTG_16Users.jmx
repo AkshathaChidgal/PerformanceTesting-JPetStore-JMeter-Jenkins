@@ -5,6 +5,8 @@
       <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
         <collectionProp name="Arguments.arguments"/>
       </elementProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
     </TestPlan>
     <hashTree>
       <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
@@ -43,7 +45,7 @@
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="1 Open URL">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="1 Open URL" enabled="true">
             <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
             <stringProp name="HTTPSampler.path">jpetstore/actions/Catalog.action</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -119,7 +121,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="1 Search Product">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="1 Search Product" enabled="true">
             <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
             <stringProp name="HTTPSampler.path">jpetstore/actions/Catalog.action</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -160,7 +162,7 @@
             </elementProp>
           </HTTPSamplerProxy>
           <hashTree>
-            <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config">
+            <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
               <stringProp name="delimiter">,</stringProp>
               <stringProp name="fileEncoding"></stringProp>
               <stringProp name="filename">C:/JMeter/JmeterScripts/UdemyLearningCourse2/Project2/PerformanceTesting-JPetStore-JMeter-Jenkins/TestData/Search_Data.csv</stringProp>
@@ -255,7 +257,7 @@
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Scenario-2 View Details">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Scenario-2 View Details" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
@@ -640,7 +642,7 @@
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Scenario-3 Add to Cart">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Scenario-3 Add to Cart" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
@@ -826,7 +828,7 @@
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="3-3-Enter Usernname and password">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="3-3-Enter Usernname and password" enabled="true">
               <stringProp name="TestPlan.comments">Detected the start of a redirect chain</stringProp>
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
               <stringProp name="HTTPSampler.path">jpetstore/actions/Account.action</stringProp>
@@ -875,7 +877,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config">
+              <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
                 <stringProp name="delimiter">,</stringProp>
                 <stringProp name="fileEncoding"></stringProp>
                 <stringProp name="filename">C:/JMeter/JmeterScripts/UdemyLearningCourse2/Project2/PerformanceTesting-JPetStore-JMeter-Jenkins/TestData/LoginData.csv</stringProp>
@@ -887,7 +889,7 @@
                 <stringProp name="variableNames">username,password</stringProp>
               </CSVDataSet>
               <hashTree/>
-              <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer">
+              <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
                 <stringProp name="ConstantTimer.delay">3000</stringProp>
                 <stringProp name="RandomTimer.range">100.0</stringProp>
                 <stringProp name="TestPlan.comments">Recorded:13614ms</stringProp>
@@ -1076,7 +1078,7 @@
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Click on product id">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Click on product id" enabled="true">
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
               <stringProp name="HTTPSampler.path">jpetstore/actions/Catalog.action</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -1379,7 +1381,7 @@
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Scenario-4 Check out">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Scenario-4 Check out" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
@@ -1475,7 +1477,7 @@
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="4-2-Click on sign in">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="4-2-Click on sign in" enabled="true">
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
               <stringProp name="HTTPSampler.path">jpetstore/actions/Account.action</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -1560,12 +1562,12 @@
               <hashTree/>
             </hashTree>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="4-3-Enter usename,passwork &amp; click on login ">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="4-3-Enter usename,passwork &amp; click on login " enabled="true">
             <boolProp name="TransactionController.parent">true</boolProp>
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="4-3-Enter usename,passwork &amp; click on login ">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="4-3-Enter usename,passwork &amp; click on login " enabled="true">
               <stringProp name="TestPlan.comments">Detected the start of a redirect chain</stringProp>
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
               <stringProp name="HTTPSampler.path">jpetstore/actions/Account.action</stringProp>
@@ -1614,7 +1616,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config">
+              <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
                 <stringProp name="delimiter">,</stringProp>
                 <stringProp name="fileEncoding"></stringProp>
                 <stringProp name="filename">C:/JMeter/JmeterScripts/UdemyLearningCourse2/Project2/PerformanceTesting-JPetStore-JMeter-Jenkins/TestData/LoginData.csv</stringProp>
@@ -1708,7 +1710,7 @@
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="4-4-Click on cateogory">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="4-4-Click on cateogory" enabled="true">
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
               <stringProp name="HTTPSampler.path">jpetstore/actions/Catalog.action</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -2653,12 +2655,12 @@
       </hashTree>
       <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="Scneario-1 Search - Ultimate Thread Group">
         <collectionProp name="ultimatethreadgroupdata">
-          <collectionProp name="-335039929">
-            <stringProp name="1723">61</stringProp>
+          <collectionProp name="1727281721">
+            <stringProp name="54">6</stringProp>
+            <stringProp name="48">0</stringProp>
+            <stringProp name="56">8</stringProp>
+            <stringProp name="48687">120</stringProp>
             <stringProp name="53">5</stringProp>
-            <stringProp name="30">30</stringProp>
-            <stringProp name="60">60</stringProp>
-            <stringProp name="10">10</stringProp>
           </collectionProp>
         </collectionProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
@@ -2668,12 +2670,12 @@
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
       </kg.apc.jmeter.threads.UltimateThreadGroup>
       <hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Scenario-1 Search">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Scenario-1 Search" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="1 Open URL">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="1 Open URL" enabled="true">
             <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
             <stringProp name="HTTPSampler.path">jpetstore/actions/Catalog.action</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -2876,12 +2878,12 @@
       </hashTree>
       <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="Scneario-2 View Details - Ultimate Thread Group">
         <collectionProp name="ultimatethreadgroupdata">
-          <collectionProp name="1305272930">
-            <stringProp name="1629">30</stringProp>
+          <collectionProp name="607208350">
+            <stringProp name="54">6</stringProp>
+            <stringProp name="1572">15</stringProp>
+            <stringProp name="56">8</stringProp>
+            <stringProp name="48687">120</stringProp>
             <stringProp name="53">5</stringProp>
-            <stringProp name="30">30</stringProp>
-            <stringProp name="60">60</stringProp>
-            <stringProp name="10">10</stringProp>
           </collectionProp>
         </collectionProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
@@ -3261,12 +3263,12 @@
       </hashTree>
       <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="Scneario-3 Add to Cart- Ultimate Thread Group">
         <collectionProp name="ultimatethreadgroupdata">
-          <collectionProp name="602863142">
+          <collectionProp name="1399768114">
+            <stringProp name="51">3</stringProp>
+            <stringProp name="1629">30</stringProp>
             <stringProp name="56">8</stringProp>
+            <stringProp name="48687">120</stringProp>
             <stringProp name="53">5</stringProp>
-            <stringProp name="30">30</stringProp>
-            <stringProp name="60">60</stringProp>
-            <stringProp name="10">10</stringProp>
           </collectionProp>
         </collectionProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
@@ -3276,7 +3278,7 @@
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
       </kg.apc.jmeter.threads.UltimateThreadGroup>
       <hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Scenario-3 Add to Cart" enabled="true">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Scenario-3 Add to Cart">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
@@ -4006,12 +4008,12 @@
       </hashTree>
       <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="Scneario-4 Check Out- Ultimate Thread Group">
         <collectionProp name="ultimatethreadgroupdata">
-          <collectionProp name="-360369261">
+          <collectionProp name="745349217">
             <stringProp name="49">1</stringProp>
+            <stringProp name="1665">45</stringProp>
+            <stringProp name="56">8</stringProp>
+            <stringProp name="48687">120</stringProp>
             <stringProp name="53">5</stringProp>
-            <stringProp name="30">30</stringProp>
-            <stringProp name="60">60</stringProp>
-            <stringProp name="10">10</stringProp>
           </collectionProp>
         </collectionProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
@@ -15930,7 +15932,7 @@
         </hashTree>
       </hashTree>
       <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
-        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <boolProp name="ResultCollector.error_logging">true</boolProp>
         <objProp>
           <name>saveConfig</name>
           <value class="SampleSaveConfiguration">
