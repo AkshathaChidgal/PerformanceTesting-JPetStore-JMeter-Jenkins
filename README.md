@@ -47,3 +47,103 @@ The primary objective is to evaluate the system’s **response time, CPU utiliza
 │   ├── Readme.md
 │   └── .gitkeep
 README.md
+```
+
+## 🛠 Tools & Technologies
+- **Apache JMeter 5.6.3** – Performance/load testing  
+- **Jenkins** – CI/CD and automation of test runs  
+- **AppDynamics** – Application Performance Monitoring (APM)  
+- **Apache Tomcat** – Local deployment environment for the JPetStore app  
+- **GitHub** – Version control for project files and collaboration  
+
+---
+
+## 🚀 Getting Started
+
+### 🔹 Prerequisites
+- Install **Java 8+** and configure `JAVA_HOME`
+- Install **JMeter 5.6.3**
+- Setup **Jenkins** with required plugins: *HTML Publisher*, *Performance Plugin*
+- Deploy JPetStore on **Apache Tomcat**
+- Clone this repository:
+  
+```bash
+  git clone https://github.com/AkshathaChidgal/PerformanceTesting-JPetStore-JMeter-Jenkins.git
+```
+
+---
+## 🔹 Jenkins Freestyle Job
+
+Example **Build Step** command to run JMeter tests with timestamped reports:
+
+```
+for /f %%i in ('powershell -Command "Get-Date -Format yyyyMMdd_HHmmss"') do set timestamp=%%i
+set OUTPUT_DIR=report_%timestamp%
+mkdir "03_TestResults\%OUTPUT_DIR%"
+mkdir "04_TestReports\%OUTPUT_DIR%"
+
+C:\JMeter\apache-jmeter-5.6.3\bin\jmeter.bat ^
+  -n -t "01_TestPlans\JPetStore_UltimateTG_16Users.jmx" ^
+  -l "03_TestResults\%OUTPUT_DIR%\LoadTestResult.csv" ^
+  -e -o "04_TestReports\%OUTPUT_DIR%" ^
+  -Jusers=50 -Jrampup=30
+```
+
+
+## 🔹 Jenkins Pipeline (Jenkinsfile)
+
+The Jenkins pipeline automates the entire process:  
+
+- ✅ Checkout project from GitHub  
+- ✅ Run JMeter tests with parameters (`USERS`, `RAMPUP`)  
+- ✅ Generate CSV & HTML reports in timestamped folders  
+- ✅ Publish reports via **Jenkins HTML Publisher**  
+
+---
+
+## 📊 AppDynamics Integration
+
+AppDynamics is used for monitoring application behavior under load:  
+
+- ⏱ Response time trends  
+- 📈 Throughput analysis  
+- 💻 CPU & Memory utilization  
+- 🗄 Database & backend performance  
+
+📷 Screenshots are stored in:  
+
+06_AppDynamicsScreenshots/
+
+
+---
+
+## 📑 Observations
+
+Performance analysis reports and insights are stored in:  
+
+07_Observations/
+
+
+Includes:  
+- 📊 Aggregate Reports from JMeter  
+- 📄 Detailed Result Docs (e.g., 16 users, 120s test)  
+- 📝 Summary notes & insights  
+
+These help in **bottleneck identification** and **optimization recommendations**.  
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!  
+
+1. Fork the repo  
+2. Create a feature branch  
+3. Submit a Pull Request  
+
+---
+
+## 📬 Contact
+
+For questions or suggestions:  
+📧 **cakshathachidgal@gmail.com**
