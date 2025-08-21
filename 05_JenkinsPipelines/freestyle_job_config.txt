@@ -1,0 +1,11 @@
+for /f %%i in ('powershell -Command "Get-Date -Format yyyyMMdd_HHmmss"') do set timestamp=%%i
+set OUTPUT_DIR=report_%timestamp%
+
+mkdir "PerformanceTesting-JPetStore-JMeter-Jenkins\TestResults\%OUTPUT_DIR%"
+mkdir "PerformanceTesting-JPetStore-JMeter-Jenkins\TestReports\%OUTPUT_DIR%"
+
+C:\JMeter\apache-jmeter-5.6.3\apache-jmeter-5.6.3\bin\jmeter.bat ^
+-n -t "01_TestPlans\JPetStore_UltimateTG_16Users.jmx" ^
+-l "03_TestResults\%OUTPUT_DIR%\LoadTestresult.csv" ^
+-e -o "04_TestReports\%OUTPUT_DIR%" ^
+-Jjmeter.save.saveservice.output_format=csv
